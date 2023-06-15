@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mockup OSRS Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="wrap">
+    <!-- Login Bar -->
+    <span class="loginBox" onclick="login()">Log In</span>
+    <!-- Header Banner -->
+    <header class="banner"></header>
+    <button class="bnrBtn" onclick="hide()">Hide Player Count</button>
+    <button class="bnrBtn" onclick="hidebanner()">Hide Banner</button>
+
+    <!-- Player Count -->
+<p class="playerCount">There are currently 80,000 people playing!</p>
+<!-- Main Page -->
+<main class="contentBox">
+                <div class="homenavBox"><h3 class="homeNBTitle">Game</h3>
+                <ul class="list">
+                    <li onclick ="download()">Download Old School</li>
+                    <li>World Select</li>
+                    <li>World Map</li>
+                    <li>Redeem Code</li>
+                    <li>News</li>
+                    <li>Status</li>
+                    <li>Jagex Launcher</li></ul>
+                </div>
+                <div class="homenavBox"><h3 class="homeNBTitle">Community</h3>
+                <ul class="list">
+                        <li>Polls</li>
+                        <li>Polling Charter</li>
+                        <li>HiScores</li>
+                        <li>FSW HiScores</li>
+                        <li>Grand Exchange</li>
+                        <li>Forums</li>
+                        <li>Merchandise</li>
+                        <li>Wiki</li>
+                        <li>Runelite</li>
+                    </ul>
+                </div>
+                <div class="homenavBox"><h3 class="homeNBTitle">Account</h3>
+                    <ul class="list">
+                    <li>Become a Member</li>
+                    <li>Old School Bonds</li>
+                    <li>Account Settings</li>
+                    <li>Enable Authenticator</li>
+                    <li>Support</li>
+                    </ul>
+                </div>
+<!-- Buttons -->
+<div class="navButtons">
+    <div class="buttonSelect"><div class="buttonTxt">New User? <br> Sign up here</div></div>
+    <div class="buttonSelect"><div class="buttonTxt">Free Player? <br> Play Now! <br> <div class="worldTxt">(Old School 155)</div></div></div>
+    <div class="buttonSelect"><div class="buttonTxt">Member? <br> Play Now! <br> <div class="worldTxt">(Old School 90)</div></div></div>
+    <div class="worldSelect">Manually select world</div>
+    <button class="tip" onclick="changeText()">Look at Tips!</button>
+
+</div>
+</main>
+
+<!-- News Section -->
+<section class="News">
+    <h1 class="Welcome">Welcome to Old School RuneScape!</h1>
+
+    <p class="welcomeTxt">Free GP Pl0x, rebuilding account.</p>
+
+    <h3 class="newsTitle">News and Updates</h3>
+
+    <article class="newsPost">
+        <img src="https://cdn.runescape.com/assets/img/external/oldschool/2023/newsposts/2023-05-11-Impromptu/thumbnail.png" alt="" class="newsPic">
+        <div class="newsArticle">
+            <h3 class="newsArticleTitle">It's Alive???</h3>
+            <span class="subTxt">Game Updates | 25 May 2024</span>
+            <p class="newsArticleTxt">Something rises from beneath the cemetary! <a href="" class="fullTxt">Read More...</a></p>
+        </div>
+    </article>
+</section>
+</div>
+</div>
+<script src="app.js" async defer></script>
+</body>
+</html>
+

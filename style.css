@@ -1,0 +1,229 @@
+@keyframes shift {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg)
+    }
+}
+
+@keyframes slideText{
+    0% {
+        transform: translateX(-300[px]);
+    }
+    50%{
+    }
+    100% {
+        transform: translateX(110vw);
+    }
+}
+
+@keyframes moveScroll {
+    from {
+        transform: translateY(30vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+.wrap {
+    background: url('https://www.runescape.com/img/rsp777/bg2.jpg') repeat-y center top;
+margin: 0 auto;
+overflow-y: hidden;
+padding: 0 50px;
+width: 815px;
+}
+
+/* Note:I had no idea how to get the wrapper to work, this is from the website. BUT IT WORKED DESPITE THE REST JUST BEING ALL ME */
+
+
+body {
+    background: black;
+    font-family: Arial,Helvetica,sans-serif;
+} 
+
+.loginBox {
+    background-color: black;
+    color: greenyellow;
+    display: block;
+    border: solid #382418;
+    margin: 10px auto;
+    padding: 3px;
+    text-align: right;
+    position: relative;
+    font-size: .8em;
+    animation: slideText 5s linear 1s infinite alternate;
+} 
+
+.banner {
+    background: url('https://www.runescape.com/img/rsp777/title2/rslogo3.png') no-repeat center;  
+    display: block;
+    margin-bottom: 25px;
+    min-height: 135px;
+    text-align: center;
+} 
+
+.playerCount {
+    /* border: solid red;  */
+    color: white;
+    text-align: center;
+    font-size: .8em;
+}
+
+
+.contentBox {
+    /* border: solid blue; */
+    display: block;
+}
+
+.homenavBox {
+    border: 2px solid rgb(105, 70, 5);
+    background-color: black;
+    margin-bottom: 15px;
+    position: relative;
+    width: 300px;
+    display: block;
+
+}
+
+.list {
+    list-style-type: none;
+    color: greenyellow;
+    font-size: .8em;
+}
+
+.homeNBTitle {
+    /* border: solid purple; */
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: -25px;
+    width: 100%;
+    font-size: .9em;
+    background: transparent;
+    font-weight: normal;
+}
+
+.navButtons {
+    /* border: solid red; */
+    float: right;
+    padding-top: 23px;
+    position: relative;
+    bottom: 500px;
+}
+
+.buttonSelect {
+    /* border: solid yellow; */
+    color: red;
+    background: url('https://www.runescape.com/img/rsp777/splash/compare_users.gif') no-repeat center;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+    margin-right: 8px;
+    height: 105px;
+    width: 130px;
+    padding: 10px;
+    animation: 12s linear 0s infinite shift
+}
+
+.buttonTxt, .worldTxt {
+    background-color: transparent;
+    /* border: solid grey; */
+    padding-top: 20px;
+}
+
+.worldTxt {
+    font-size: .8em;
+    font-weight: normal;
+    padding: 0;
+}
+
+.worldSelect {
+    /* border: solid pink; */
+    text-align: center;
+    margin: 10px;
+    color: greenyellow;
+    font-size: .8em;
+}
+
+
+.News {
+    /* border: solid blueviolet; */
+    background: url('https://www.runescape.com/img/rsp777/scroll/backdrop_745.gif') repeat-y top center;
+    padding: 30px 25px;
+    text-align: center;
+    display: block;
+    position: relative;
+    height: 400px;
+    width: 760px;
+    overflow: auto;
+    animation: 4s linear 0s infinite alternate moveScroll
+}
+
+h1 {
+    /* border: solid silver; */
+    color:rgb(105, 70, 5);
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    font-family: initial;
+    display: inline flex;
+    font-size: 2em;
+    line-height: 1;
+    
+}
+
+.welcomeTxt {
+    /* border: solid gold; */
+    text-align: left;
+    text-indent: 5%;
+}
+
+.newsTitle {
+    /* border: solid lightseagreen; */
+    text-align: center;
+}
+
+.newsPost {
+    /* border: solid indigo; */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: left;
+}
+
+.newsPic {
+    /* border: solid orange; */
+    width: 30%;
+    height: 30%;
+}
+
+.newsArticleTitle {
+    /* border: solid red; */
+    color:rgb(105, 70, 5);
+}
+
+.newsArticle {
+    /* border: solid purple; */
+    float: right;
+    width: 300px;
+    padding-left: 15px;
+}
+
+.newsArticleTxt {
+    /* border: solid blue; */
+    font-size: .9em;
+}
+
+.subTxt {
+    /* border: solid green; */
+    font-style: italic;
+    font-size: .8em;
+}
+
+.hide {
+    color: transparent;
+    display: none;
+}
